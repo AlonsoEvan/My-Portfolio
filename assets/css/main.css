@@ -4687,3 +4687,34 @@ input, select, textarea {
 		}
 
 	}
+
+
+
+/* =========================
+   Custom overrides (Evan)
+   ========================= */
+
+/* Cards symétriques */
+.posts article {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Image preview : même hauteur partout */
+.project-thumb img {
+  height: 320px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Le bloc actions pousse le bouton en bas */
+.posts article .actions {
+  margin-top: auto;
+}
+
+/* Sécurité : pas de puces */
+.actions.special {
+  list-style: none;
+  padding-left: 0;
+}
